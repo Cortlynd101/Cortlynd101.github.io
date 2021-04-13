@@ -1,16 +1,13 @@
-
-
-
-.html{
+body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: powderblue;
 }
 
-.h1 {
+h1 {
     font-size: large;
 }
 
-#header {
+.header {
     color: peachpuff;
     background-color:white;
 }
