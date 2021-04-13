@@ -1,3 +1,6 @@
+
+
+
 .html{
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: powderblue;
@@ -7,7 +10,7 @@
     font-size: large;
 }
 
-.title {
+#header {
     color: peachpuff;
     background-color:white;
 }
