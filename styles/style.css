@@ -15,16 +15,16 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: powderblue;
     padding: 0%;
-    grid-template-columns: 1fr, 1fr, 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1f, 1fr;
     display: grid;
     /* grid-template-rows: 1/8fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1/2fr 1fr 1fr 1fr; */
 }
 
-.above {
+/* .above {
     grid-column: 1/3;
-}
+} */
 
 .header {
     grid-column: 1/3;
@@ -34,12 +34,6 @@ body {
     padding-left: 2em;
     margin-left: 2em;
     margin-right: 2em;
-    border-radius: 1em;
-}
-
-li {
-    padding: 1em;
-    /* background-color:pink; */
     border-radius: 1em;
 }
 
@@ -53,40 +47,101 @@ li {
     align-content: center;
 }
 
+.unused {
+    grid-column: 2/4;
+    grid-row: 4/5;
+}
+
 #flavors {
     grid-column: 1/1;
-    grid-row: 4/5;
+    grid-row: 4/4;
     /* margin-right: 2em;
     margin-left: 2em; */
-    margin: 2em;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+#flavorImg {
+    grid-column: 1/1;
+    grid-row: 5/5;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5em;
 }
 
 #syrups {
     grid-column: 2/2;
-    grid-row: 4/5;
-    margin: 2em;
+    grid-row: 4/4;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+
+#syrupsImg {
+    grid-column: 2/2;
+    grid-row: 5/5;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5em;
 }
 
 #soft-toppings {
     grid-column: 1/1;
-    grid-row: 6/7;
-    margin: 2em;
+    grid-row: 6/6;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4em;
+}
+
+#softTImg {
+    grid-column: 1/1;
+    grid-row: 7/7;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5em;
 }
 
 #hard-toppings {
     grid-column: 2/2;
-    grid-row: 6/7;
-    margin: 2em;
+    grid-row: 6/6;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4em;
+}
+
+#hardTImg {
+    grid-column: 2/2;
+    grid-row: 7/7;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.5em;
 }
 
 #extras {
-    grid-column: 1/2;
+    grid-column: 1/1;
     grid-row: 9/9;
-    margin: 2em;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .sundae-creater {
-    grid-column: 1/3;
+    grid-column: 1/2;
     grid-row: 10;
     margin-left: 2em;
     margin-right: 2em;
@@ -108,8 +163,10 @@ a {
     border-radius: 1em;
 }
 
+img {}
+
 a:hover {
-    background-color: #555;
+    background-color: rgb(240, 163, 189);
 }
 
 a:active {}
