@@ -6,58 +6,94 @@ body {
     /* display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr; */
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
     
     /* grid-template-rows: 1/8fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1/2fr 1fr 1fr 1fr; */
+}
+
+div {
+    border: 3px solid red;
 }
 
 .title {
     /* grid-area: "I"; */
     background-color: pink;
     /* grid-template-areas: "I I I"; */
-    grid-column: 1/4;
-    grid-row: 1/1;
+    /* grid-column: 1/4;
+    grid-row: 1/1; */
     margin: 2em;
     padding: 2em;
+    color: lightseagreen;
+    border-radius: 2em;
+    font-size:x-large;
+    order: 0;
+    align-self: flex-start;
 }
 
+
 .pictures {
-    display: flex;
-    flex-wrap: wrap;
+    
 }
 
 .one {
-    grid-column: 1/1;
-    grid-row: 2/2;
+    order: 1;
+    width: 30em;
+    height: 30em;
 }
 
 .two {
-    grid-column: 2/2;
-    grid-row: 2/2;
+    order: 2;
+    width: 30em;
+    height: 30em;
 }
 
 .three {
-    grid-column: 3/3;
-    grid-row: 2/2;
+    order: 3;
+    width: 30em;
+    height: 30em;
+}
+
+.four {
+    order: 4;
+    width: 30em;
+    height: 30em;
+}
+
+.five {
+    order: 5;
+    width: 30em;
+    height: 30em;
+}
+
+.six {
+    order: 6;
+    width: 30em;
+    height: 30em;
 }
 
 img {
-    max-width: 100%;  
-    /* object-fit: scale-down; */
+    max-width: 25%;  
+    object-fit: scale-down;
 }
 
 .homepage-btn {
-    grid-column: 2/2;
-    grid-row: 3/3;
     margin: 2em;
     padding: 2em;
+    order: 7;
+    align-self: flex-end;
 }
 
 a {
     background-color: pink;
     color: lightseagreen;
-    padding: .5em .5em;
+    padding: 2em 2em;
     text-decoration: none;
     text-transform: uppercase;
-    border-radius: 1em;
+    border-radius: 2em;
 }
