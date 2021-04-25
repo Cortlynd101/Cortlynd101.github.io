@@ -1,129 +1,93 @@
-html {
-    box-sizing: border-box;
-}
-
-* {
-    box-sizing: inherit;
-}
-
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: powderblue;
-    padding: 0%;
-    margin: 0%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* grid-template-rows:  1fr 1fr 1fr 1fr; */
+    grid-template-rows: .6fr 1fr 1fr 1fr;
 }
 
 .header {
+    grid-row: 1/1;
     grid-column: 1/4;
     color: lightseagreen;
     background-color: pink;
     font-size: large;
-    padding-left: 2em;
-    margin-left: 2em;
-    margin-right: 2em;
-    border-radius: 1em;
+    text-align: center;
+    text-indent: 2em;
+    border-radius: 2em;
+    margin: 2em;
 }
 
-.sundae-links {
-    grid-column: 1/4;
+#title {
+    text-decoration: underline;
+}
+
+#welcome {
+    font-size: larger;
+    text-align: center;
+    text-indent: 2em;
+}
+
+.flavors {
     grid-row: 2/2;
-    margin-right: 2em;
-    margin-left: 2em;
-    margin-top: 1em;
-    margin-bottom: 1em;
-    align-content: center;
+    grid-column: 1/1;
+    text-align: center;
 }
 
-#flavors {
-    grid-column: 1/1;
+.syrups {
+    grid-row: 2/2;
+    grid-column: 2/2;
+    text-align: center;
+}
+
+.soft-toppings {
     grid-row: 3/3;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#flavorImg {
     grid-column: 1/1;
-    grid-row: 4/4;
-    border-radius: 50%;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
 }
 
-#syrups {
-    grid-column: 2/2;
+.hard-toppings {
     grid-row: 3/3;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#syrupsImg {
     grid-column: 2/2;
-    grid-row: 4/4;
-    border-radius: 50%;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
 }
 
-#soft-toppings {
-    grid-column: 1/1;
-    grid-row: 5/5;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
+.extras {
+    grid-row: 2/2;
+    grid-column: 3/3;
+    text-align: center;
 }
 
-#softTImg {
-    grid-column: 1/1;
-    grid-row: 6/6;
-    border-radius: 50%;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
+.socials {
+    grid-row: 3/3;
+    grid-column: 3/3;
 }
 
-#hard-toppings {
-    grid-column: 2/2;
-    grid-row: 5/5;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
+#facebook {
+    text-align: center;
 }
 
-#hardTImg {
-    grid-column: 2/2;
-    grid-row: 6/6;
-    border-radius: 50%;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
+#instagram {
+    text-align: center;
 }
 
-#extras {
-    grid-column: 1/1;
-    grid-row: 7/7;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
+#twitter {
+    text-align: center;
 }
 
 .sundae-creater {
-    grid-column: 1/4;
-    grid-row: 8;
-    margin-left: 2em;
-    margin-right: 2em;
+    grid-row: 4/4;
+    grid-column: 1/3;
+    font-size: larger;
+    text-align: center;
+    text-indent: 2em;
 }
 
 a {
     background-color: pink;
     color: lightseagreen;
-    padding: .5em .5em;
+    padding: 1em 1em;
+    margin-top: 1em;
     text-decoration: none;
     text-transform: uppercase;
     border-radius: 1em;
@@ -135,5 +99,6 @@ a:hover {
 
 img {
     max-width: 300px;
-    margin: 2em;
+    border-radius: 50%;
+    margin: 1em;
 }
