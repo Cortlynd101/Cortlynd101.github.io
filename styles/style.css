@@ -83,7 +83,7 @@ body {
     text-indent: 2em;
 }
 
-a {
+#changed-a {
     background-color: pink;
     color: lightseagreen;
     padding: 1em 1em;
@@ -93,7 +93,7 @@ a {
     border-radius: 1em;
 }
 
-a:hover {
+#changed-a:hover {
     background-color: rgb(240, 163, 189);
 }
 
