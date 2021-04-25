@@ -80,6 +80,7 @@ div {
 img {
     max-width: 75%;
     object-fit: scale-down;
+    border-radius: 50%;
 }
 
 .homepage-btn {
@@ -100,4 +101,8 @@ a {
 /* 
 h1 {
     display: inherit;
+} */
+
+/* @media (max-width: 1000px) {
+
 } */
