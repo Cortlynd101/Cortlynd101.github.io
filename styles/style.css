@@ -151,8 +151,6 @@ a {
     border-radius: 1em;
 }
 
-img {}
-
 a:hover {
     background-color: rgb(240, 163, 189);
 }
@@ -160,3 +158,8 @@ a:hover {
 a:active {}
 
 a:visited {}
+
+img {
+    max-width: 300px;
+    margin: 2em;
+}
