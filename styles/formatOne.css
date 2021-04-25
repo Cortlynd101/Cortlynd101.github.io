@@ -21,7 +21,6 @@ div {
     padding: 0em;
 }
 
-
 .title {
     /* grid-area: "I"; */
     background-color: pink;
@@ -38,8 +37,6 @@ div {
     max-width: 75%;
     padding: 2em;
 }
-
-.pictures {}
 
 .one {
     order: 1;
@@ -98,6 +95,7 @@ a {
     text-transform: uppercase;
     border-radius: 2em;
 }
+
 /* 
 h1 {
     display: inherit;
