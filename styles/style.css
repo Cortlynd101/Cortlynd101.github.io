@@ -81,6 +81,12 @@ body {
     font-size: larger;
     text-align: center;
     text-indent: 2em;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
 }
 
 #changed-a {
@@ -101,6 +107,16 @@ img {
     max-width: 300px;
     border-radius: 50%;
     margin: 1em;
+}
+
+form {
+    text-indent: 0%;
+    text-align: left;
+    margin: 4em;
+}
+
+h2 {
+    text-align: left;
 }
 
 @media (max-width: 1000px) {
