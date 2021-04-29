@@ -79,27 +79,28 @@
     <div class="sundae-creater">
         <p>Now that you've decided what toppings you'd like on your
             sundae, enter them below and order your dream bowl!
+            Choose one flavor, than as many syrups, toppings, or extras that you would like!
         </p>
         <div id="getFlavors">
             <h2>Flavors</h2>
             <form>
-                <input type="checkbox" id="vanilla" name="vanilla" value="Vanilla">
-                <label for="vanilla"> Vanilla</label><br>
+                <label><input type="radio" id="vanilla" name="flavor" value="Vanilla" checked>
+                 Vanilla</label><br>
 
-                <input type="checkbox" id="chocolate" name="chocolate" value="Chocolate">
-                <label for="chocolate"> Chocolate</label><br>
+                 <label><input type="radio" id="chocolate" name="flavor" value="Chocolate">
+                 Chocolate</label><br>
 
-                <input type="checkbox" id="strawberry" name="strawberry" value="Strawberry">
-                <label for="strawberry"> Strawberry</label><br>
+                 <label><input type="radio" id="strawberry" name="flavor" value="Strawberry">
+                 Strawberry</label><br>
 
-                <input type="checkbox" id="mint" name="mint" value="Mint">
-                <label for="mint"> Mint</label><br>
+                 <label><input type="radio" id="mint" name="flavor" value="Mint">
+                 Mint</label><br>
 
-                <input type="checkbox" id="mango" name="mango" value="Mango">
-                <label for="mango"> Mango</label><br>
+                 <label><input type="radio" id="mango" name="flavor" value="Mango">
+                 Mango</label><br>
 
-                <input type="checkbox" id="cotton-candy" name="cotton-candy" value="Cotton-candy">
-                <label for="cotton-candy"> Cotton-candy</label><br>
+                 <label><input type="radio" id="cotton-candy" name="flavor" value="Cotton-candy">
+                 Cotton-candy</label>
             </form>
         </div>
 
@@ -113,7 +114,7 @@
                 <label for="chocolate-syrup"> Chocolate Syrup</label><br>
 
                 <input type="checkbox" id="strawberry-syrup" name="strawberry-syrup" value="Strawberry Syrup">
-                <label for="strawberry-syrup"> Strawberry Syrup</label><br>
+                <label for="strawberry-syrup"> Strawberry Syrup</label>
             </form>
         </div>
 
@@ -136,7 +137,7 @@
                 <label for="strawberries"> Strawberries</label><br>
 
                 <input type="checkbox" id="gummy-bears" name="gummy-bears" value="Gummy-Bears">
-                <label for="gummy-bears"> Gummy-Bears</label><br>
+                <label for="gummy-bears"> Gummy-Bears</label>
             </form>
         </div>
 
@@ -159,7 +160,7 @@
                 <label for="oreo-pieces"> Oreo-Pieces</label><br>
 
                 <input type="checkbox" id="peanuts" name="peanuts" value="Peanuts">
-                <label for="peanuts"> Peanuts</label><br>
+                <label for="peanuts"> Peanuts</label>
             </form>
         </div>
 
@@ -173,8 +174,12 @@
                 <label for="whipped-cream"> Whipped-Cream</label><br>
 
                 <input type="checkbox" id="waffle-cone" name="waffle-cone" value="Waffle-Cone">
-                <label for="waffle-cone"> Waffle-Cone</label><br>
+                <label for="waffle-cone"> Waffle-Cone</label>
             </form>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div>
         </div>
     </div>
 </body>
