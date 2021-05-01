@@ -7,8 +7,8 @@ function RunFuncs() {
 
     function InfoChange() {
         let info = document.getElementById('sundae_info');
-        info.innerHTML = "<p>" + "You choose a sundae with a "+ Flavor + " base.";
-        info.innerHTML += " " + Syrup;
+        info.innerHTML = "<p>" + "You chose a sundae with a " + Flavor + " base.";
+        info.innerHTML += "<br>" + Syrup;
         info.innerHTML += "<br>" + Soft_Topping;
         info.innerHTML += "<br>" + Hard_Topping;
         info.innerHTML += "<br>" + Extra;
@@ -56,92 +56,126 @@ function RunFuncs() {
         else if (caramel_syrup.checked == false && chocolate_syrup.checked == false && strawberry_syrup.checked == true) {
             Syrup = "You added strawberry-syrup.";
         }
-        else if (caramel_syrup.checked == true && chocolate_syrup.checked == true && strawberry_syrup.checked == false)
-        {
+        else if (caramel_syrup.checked == true && chocolate_syrup.checked == true && strawberry_syrup.checked == false) {
             Syrup = "You added caramel-syrup & chocolate-syrup.";
         }
-        else if (caramel_syrup.checked == true && chocolate_syrup.checked == false && strawberry_syrup.checked == true)
-        {
+        else if (caramel_syrup.checked == true && chocolate_syrup.checked == false && strawberry_syrup.checked == true) {
             Syrup = "You added caramel-syrup & strawberry-syrup.";
         }
-        else if (caramel_syrup.checked == false && chocolate_syrup.checked == true && strawberry_syrup.checked == true)
-        {
+        else if (caramel_syrup.checked == false && chocolate_syrup.checked == true && strawberry_syrup.checked == true) {
             Syrup = "You added chocolate-syrup & strawberry-syrup.";
         }
-        else if (caramel_syrup.checked == true && chocolate_syrup.checked == true && strawberry_syrup.checked == true)
-        {
+        else if (caramel_syrup.checked == true && chocolate_syrup.checked == true && strawberry_syrup.checked == true) {
             Syrup = "You added caramel-syrup, chocolate-syrup, and strawberry-syrup.";
         }
     }
 
     function Soft_Toppings() {
+        let getBananas = "";
+        let getBlueberries = "";
+        let getBrownie_bites = "";
+        let getCookie_dough = "";
+        let getStrawberries = "";
+        let getGummy_bears = "";
+
         let bananas = document.getElementById('bananas');
         if (bananas.checked == true) {
-            alert('yeehaw');
+            getBananas = "<li>" + "Bananas" + "</li>";
         }
         let blueberries = document.getElementById('blueberries');
         if (blueberries.checked == true) {
-            alert('yeehaw');
+            getBlueberries = "<li>" + "Blueberries" + "</li>";
         }
         let brownie_bites = document.getElementById('brownie-bites');
         if (brownie_bites.checked == true) {
-            alert('yeehaw');
+            getBrownie_bites = "<li>" + "Brownie-bites" + "</li>";
         }
         let cookie_dough = document.getElementById('cookie-dough');
         if (cookie_dough.checked == true) {
-            alert('yeehaw');
+            getCookie_dough = "<li>" + "Cookie-dough" + "</li>";
         }
         let strawberries = document.getElementById('strawberries');
         if (strawberries.checked == true) {
-            alert('yeehaw');
+            getStrawberries = "<li>" + "Strawberries" + "</li>";
         }
         let gummy_bears = document.getElementById('gummy-bears');
         if (gummy_bears.checked == true) {
-            alert('yeehaw');
+            getGummy_bears = "<li>" + "Gummy-bears" + "</li>";
+        }
+        if (getBananas == "" && getBlueberries == "" && getBrownie_bites == "" && getCookie_dough == "" && getStrawberries == "" && getGummy_bears == "") {}
+        else {
+        Soft_Topping = "You added the following soft-toppings: " + "<ul>" + getBananas + getBlueberries +
+            getBrownie_bites + getCookie_dough + getStrawberries + getGummy_bears + "</ul>";
         }
     }
 
     function Hard_Toppings() {
+        let getMint_chips = "";
+        let getChocolate_chips = "";
+        let getCoconut_shavings = "";
+        let getmANDm = "";
+        let getOreo_pieces = "";
+        let getPeanuts = "";
+
         let mint_chips = document.getElementById('mint-chips');
         if (mint_chips.checked == true) {
-            alert('yeehaw');
+            getMint_chips = "<li>" + "Mint-chips" + "</li>";
         }
         let chocolate_chips = document.getElementById('chocolate-chips');
         if (chocolate_chips.checked == true) {
-            alert('yeehaw');
+            getChocolate_chips = "<li>" + "Chocolate-chips" + "</li>";
         }
         let coconut_shavings = document.getElementById('coconut-shavings');
         if (coconut_shavings.checked == true) {
-            alert('yeehaw');
+            getCoconut_shavings = "<li>" + "Coconut-shavings" + "</li>";
         }
         let mANDm = document.getElementById('mANDm');
         if (mANDm.checked == true) {
-            alert('yeehaw');
+            getmANDm = "<li>" + "M&M's" + "</li>";
         }
         let oreo_pieces = document.getElementById('oreo-pieces');
         if (oreo_pieces.checked == true) {
-            alert('yeehaw');
+            getOreo_pieces = "<li>" + "Oreo-pieces" + "</li>";
         }
         let peanuts = document.getElementById('peanuts');
         if (peanuts.checked == true) {
-            alert('yeehaw');
+            getPeanuts = "<li>" + "Peanuts" + "</li>";
+        }
+        if (getMint_chips == "" && getChocolate_chips == "" && getCoconut_shavings == "" && getmANDm == "" && getOreo_pieces == "" && getPeanuts == "") {}
+        else {
+            Hard_Topping = "You added the following hard-toppings: " + "<ul>" + getMint_chips + getChocolate_chips +
+                getCoconut_shavings + getmANDm + getOreo_pieces + getPeanuts + "</ul>";
         }
     }
 
     function Extras() {
         let pirouline = document.getElementById('pirouline');
-        if (pirouline.checked == true) {
-            alert('yeehaw');
-        }
         let whipped_cream = document.getElementById('whipped-cream');
-        if (whipped_cream.checked == true) {
-            alert('yeehaw');
-        }
         let waffle_cone = document.getElementById('waffle-cone');
-        if (waffle_cone.checked == true) {
-            alert('yeehaw');
+
+        if (pirouline.checked == true && whipped_cream.checked == false && waffle_cone.checked == false) {
+            Extra = "You added some pirouline.";
+        }
+        else if (pirouline.checked == false && whipped_cream.checked == true && waffle_cone.checked == false) {
+            Extra = "You added whipped-cream.";
+        }
+        else if (pirouline.checked == false && whipped_cream.checked == false && waffle_cone.checked == true) {
+            Extra = "You added a waffle-cone.";
+        }
+        else if (pirouline.checked == true && whipped_cream.checked == true && waffle_cone.checked == false) {
+            Extra = "You added some pirouline & whipped-cream.";
+        }
+        else if (pirouline.checked == true && whipped_cream.checked == false && waffle_cone.checked == true) {
+            Extra = "You added some pirouline & a waffle-cone.";
+        }
+        else if (pirouline.checked == false && whipped_cream.checked == true && waffle_cone.checked == true) {
+            Extra = "You added whipped-cream & a waffle-cone.";
+        }
+        else if (pirouline.checked == true && whipped_cream.checked == true && waffle_cone.checked == true) {
+            Extra = "You added some pirouline, whipped-cream, and a waffle-cone.";
         }
     }
+
     Flavors();
     Syrups();
     Soft_Toppings();
