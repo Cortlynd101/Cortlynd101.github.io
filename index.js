@@ -1,3 +1,0 @@
-function YeeHaw () {
-alert('heehaw');
-}
