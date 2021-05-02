@@ -8,7 +8,7 @@ function RunFuncs() {
     function InfoChange() {
         let info = document.getElementById('sundae_info');
         info.innerHTML = "<p>" + "You chose a sundae with a " + Flavor + " base.";
-        info.innerHTML += "<br>" + Syrup;
+        info.innerHTML += "<br>" + Syrup + "<br>" + "<br>";
         info.innerHTML += "<br>" + Soft_Topping;
         info.innerHTML += "<br>" + Hard_Topping;
         info.innerHTML += "<br>" + Extra;
@@ -102,10 +102,10 @@ function RunFuncs() {
         if (gummy_bears.checked == true) {
             getGummy_bears = "<li>" + "Gummy-bears" + "</li>";
         }
-        if (getBananas == "" && getBlueberries == "" && getBrownie_bites == "" && getCookie_dough == "" && getStrawberries == "" && getGummy_bears == "") {}
+        if (getBananas == "" && getBlueberries == "" && getBrownie_bites == "" && getCookie_dough == "" && getStrawberries == "" && getGummy_bears == "") { }
         else {
-        Soft_Topping = "You added the following soft-toppings: " + "<ul>" + getBananas + getBlueberries +
-            getBrownie_bites + getCookie_dough + getStrawberries + getGummy_bears + "</ul>";
+            Soft_Topping = "You added the following soft-toppings: " + "<ul>" + getBananas + getBlueberries +
+                getBrownie_bites + getCookie_dough + getStrawberries + getGummy_bears + "</ul>";
         }
     }
 
@@ -141,7 +141,7 @@ function RunFuncs() {
         if (peanuts.checked == true) {
             getPeanuts = "<li>" + "Peanuts" + "</li>";
         }
-        if (getMint_chips == "" && getChocolate_chips == "" && getCoconut_shavings == "" && getmANDm == "" && getOreo_pieces == "" && getPeanuts == "") {}
+        if (getMint_chips == "" && getChocolate_chips == "" && getCoconut_shavings == "" && getmANDm == "" && getOreo_pieces == "" && getPeanuts == "") { }
         else {
             Hard_Topping = "You added the following hard-toppings: " + "<ul>" + getMint_chips + getChocolate_chips +
                 getCoconut_shavings + getmANDm + getOreo_pieces + getPeanuts + "</ul>";

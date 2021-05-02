@@ -107,6 +107,10 @@ body {
     text-indent: 0em;
 }
 
+#btn {
+    text-align: center;
+}
+
 button {
     background-color: pink;
     color: lightseagreen;
@@ -120,10 +124,6 @@ button {
 button:hover {
     background-color: rgb(240, 163, 189); 
 }
-
-/* div {
-    border: 2px solid red;
-} */
 
 #changed-a {
     background-color: pink;
